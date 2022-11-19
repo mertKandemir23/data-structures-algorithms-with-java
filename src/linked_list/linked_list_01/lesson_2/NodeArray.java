@@ -2,8 +2,24 @@ package linked_list.linked_list_01.lesson_2;
 
 public class NodeArray {
 
-  Node head = null;
-  Node tail = null;
+  public Node getHead() {
+    return head;
+  }
+
+  public void setHead(Node head) {
+    this.head = head;
+  }
+
+  public Node getTail() {
+    return tail;
+  }
+
+  public void setTail(Node tail) {
+    this.tail = tail;
+  }
+
+  private Node head = null;
+  private Node tail = null;
   //Tek yönlü doğrusal bağlı listelerde head objesini kaybedersek bir daha hiçbir objeye ulaşamayız.
   //Tail listedeki son düğümdür(obje)
   void addNode (int data) {
